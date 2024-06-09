@@ -4,8 +4,12 @@ const Form = () => {
   const [form, setForm] = useState({
     name: '',
     email: '',
-    age: ''
+    age: '',
+    tag:'',
+    sex:'',
+    direction:'',
   });
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     const newForm = {
@@ -41,7 +45,7 @@ const Form = () => {
         <p>Nombre</p>
         <input
           style={{ height: '45px', width:'60%', paddingLeft: '5px', borderRadius: '5px', border: '1px solid #399C7E'}}
-          type="text"
+          type="name"
           name="name"
           placeholder="Nombre"
           value={form.name}
@@ -56,7 +60,7 @@ const Form = () => {
           value={form.email}
           onChange={handleChange}
         />
-        <p>Edad</p>
+        <p>Age</p>
         <input
           style={{ height: '45px', width:'60%', paddingLeft: '5px', borderRadius: '5px', border: '1px solid #399C7E'}}
           type="age"
@@ -65,6 +69,37 @@ const Form = () => {
           value={form.age}
           onChange={handleChange}
         />
+
+        <p>Tag</p>
+        <input
+          style={{ height: '45px', width:'60%', paddingLeft: '5px', borderRadius: '5px', border: '1px solid #399C7E'}}
+          type="tag"
+          name="tag"
+          placeholder="Tag"
+          value={form.Tag}
+          onChange={handleChange}
+        ></input>
+
+        <p>Direction</p>
+        <input
+          style={{ height: '45px', width:'60%', paddingLeft: '5px', borderRadius: '5px', border: '1px solid #399C7E'}}
+          type="direction"
+          name="direction"
+          placeholder="Direction"
+          value={form.direction}
+          onChange={handleChange}
+        />
+
+        <p>Sex</p>
+        <input
+          style={{ height: '45px', width:'60%', paddingLeft: '5px', borderRadius: '5px', border: '1px solid #399C7E'}}
+          type="sex"
+          name="sex"
+          placeholder="Sex"
+          value={form.Sex}
+          onChange={handleChange}
+        />
+        
         <div style={{ paddingTop: '5%' }}>
           <button
             onClick={handleSubmitForm}

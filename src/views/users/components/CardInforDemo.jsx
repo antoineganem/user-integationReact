@@ -10,9 +10,8 @@ const CardInforDemo = ({ user }) => {
         borderRadius: '10px',
         backgroundColor: 'white',
         display: 'flex',
-        flexDirection: 'column',
+        justifyContent: 'center',
         alignItems: 'center',
-
         padding: '20px',
       }}
     >
@@ -22,7 +21,7 @@ const CardInforDemo = ({ user }) => {
       <div
         style={{
           display: 'flex',
-          justifyItems: 'left',
+          justifyItems: 'center',
           flexDirection: 'column',
         }}
       >

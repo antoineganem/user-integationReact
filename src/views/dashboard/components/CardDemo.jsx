@@ -7,19 +7,23 @@ const CardDemo = ({ user }) => {
     <div
       style={{
         width: '420px',
-        height: '200px',
+        height: '100px',
         boxShadow: '0px 10px 15px -3px rgba(0,0,0,0.1)',
         borderRadius: '5px',
         display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
 
         cursor: 'pointer',
         backgroundImage: `url(${backgroundCard})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+
+
       }}
     >
-      <div style={{ display: 'flex', padding: '10%' }}>
+      <div style={{ display: 'flex', padding: '10%'}}>
         <div style={{ paddingRight: '10%' }}>
           <img src={userDemo} alt={user.name} width={80} />
         </div>
